@@ -40,10 +40,14 @@ tbody {
   font-weight: bold;
 }
 
-.cela_pati {
-  column-span: 2;
-}
-
 .fila div {
   font-weight: normal;
+}
+
+.pati {
+  background-color: rgba(128, 128, 128, 0.4);
+}
+
+.lliure {
+  background-color: rgba(128, 128, 128, 0.3);
 }
