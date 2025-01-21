@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(126 226 253);
+}
+
+.taula1 {
+  border: 1px solid black;
+  background-color: rgb(255 254 226);
+  padding: 1%;
+  width: 500px;
+  border-spacing: 0 10px;
+}
+
+td,
+th,
+.mes {
+  text-align: center;
+  border-bottom: thin solid black;
+}
+
+.mes {
+  border: 0;
+}
