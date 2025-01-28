@@ -46,16 +46,15 @@ th,
   border-right: 0 !important;
 }
 
-.taula3{
-  border-spacing: 0 ;
+.taula3 {
+  border-spacing: 0;
   height: 500px;
 }
 
 .taula3 th,
-.taula3 td{
+.taula3 td {
   border: 0;
 }
-
 
 .tbody1 {
   height: 30px;
@@ -73,31 +72,72 @@ th,
   border: 1px solid black;
 }
 
-.linea{
+.linea {
   height: 35px;
 }
 
-.taula4 td, .taula4 th{
+.taula4 td,
+.taula4 th {
   border: 0;
 }
 
-.titol td{
+.titol td {
   background-color: #ffffee;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   font-weight: bold;
 }
 
-
 /* El even es par i el odd es impar */
 
-.tbody3 td:nth-child(odd), .tbody3 th:nth-child(odd){  background-color: #ffffee;
+.impars td:nth-child(odd),
+.impars th:nth-child(odd) {
+  background-color: #ffffee;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
 }
 
-.none {
-  background-color: rgb(255 254 226) !important;
-  border-bottom: 0 !important;
-  border-right: 0 !important;
+.pars td:nth-child(even),
+.pars th:nth-child(even) {
+  background-color: #ffffee;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+/* El seguent ho faig tant llarg per l'especifitat, si no hauria de ficar:
+!important */
+
+.tbody3 tr .none {
+  background-color: rgb(255 254 226);
+  border-bottom: 0;
+  border-right: 0;
+}
+
+.taula5 {
+  border-spacing: 0 0;
+}
+
+.taula5 th,
+.taula5 td {
+  border: 0;
+}
+
+.taula5 tr {
+  background-color: #dddddd;
+}
+
+.taula5 tr:nth-child(odd) {
+  background-color: white;
+}
+
+/* especifitat (0,2,1)    es la mateixa pero com esta al final s'imposa sobre l'altra */
+.taula5 thead .titol1 {
+  background-color: #dddddd;
+  color: white;
+  letter-spacing: 30px;
+  font-weight: 700;
+}
+
+.taula5 thead {
+  margin-bottom: 5px;
 }
